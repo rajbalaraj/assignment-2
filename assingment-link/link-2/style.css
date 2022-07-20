@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#top-banner {
+    background: #161616;
+    color: #fff;
+    margin-top: 50px;
+    padding: 50px 0 0 0px;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr 580px;
+    align-items: end;
+    column-gap: 24px;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.banner-body {
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+.banner-title {
+    font-size: 70px;
+    line-height: 80px;
+}
+
+.banner-text {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.link-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff4747;
+    padding: 15px 25px;
+    border-radius: 5px;
+
+}
+
+.banner-image {
+    margin-right: 10%;
+}
+
+.banner-image img {
+    width: 100%;
+    vertical-align: middle;
+    position: relative;
+    bottom: 0;
+
+}
+
+#main-body {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 25px;
+    margin-top: 100px;
+}
+
+.post-nav {
+    background-color: #161616;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    padding: 15px 0;
+    border-radius: 10px;
+}
+
+
+
+
+.post-nav .nav-btn {
+    background-color: #fff;
+    padding: 15px 25px;
+    margin: 15px 30px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    color: #161616;
+    transition: all .3s;
+
+}
+
+#active {
+    background-color: #4f2ef3;
+    color: #fff;
+
+}
+
+.post-nav .nav-btn:hover {
+    background-color: #ff4747;
+}
+
+
+
+.post-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 100px;
+}
+
+.post-main {
+    border-radius: 10px;
+    border: 1px solid #e8e8e8;
+}
+
+.post-image img {
+    width: 100%;
+}
+
+.post-body {
+    padding: 20px;
+}
+
+.post-body .author {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid #161616;
+    padding: 2px 10px;
+
+}
+
+.post-body .post-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #161616;
+}
+
+.duration,
+.comment {
+    margin-right: 20px;
+    color: #161616c3;
+    font-size: 14px;
+}
+
+.duration i,
+.comment i {
+    margin-right: 5px;
+}
+
+footer {
+    background-color: #161616;
+    padding: 100px 0 60px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+footer h1 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #fff;
+}
+
+hr {
+    color: rgb(0, 0, 0, .1);
+    margin: 50px 0;
+}
+
+.foot-links {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+
+.foot-links li {
+    list-style-type: none;
+}
+
+.foot-links li a {
+    color: #b9b9b9;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+
+.social {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.social i {
+    color: #b9b9b9;
+    font-size: 23px;
+    text-align: center;
+    margin: 0 10px;
+
+}
+
+/* @media screen  */
+
+/* mobile divice */
+@media only screen and (max-width:767px) {
+    #top-banner {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-body {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 43px;
+        margin-right: 0;
+        line-height: 50px;
+    }
+
+    .banner-text {
+        font-size: 16px;
+        width: 330px;
+        white-space: nowrap;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+        margin: 0 auto;
+    }
+
+    .banner-image {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .banner-image img {
+        width: 50%;
+    }
+
+    main {
+        margin: 30px;
+    }
+
+    #main-body {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .post-wrap {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .foot-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
